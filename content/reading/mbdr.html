@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Relación entre entidades - OVI Administración de bases de datos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OVI diseños de sitios web, UNAD Universidad Nacional Abierta y a Distancia" />
+    <meta name="copyright" content="Yonatan Daniel Rodríguez & Juan Stevan Correa" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="all">
+	<script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="../../js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://counter7.wheredoyoucomefrom.ovh/private/counter.js?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn&down=async" async></script>
+    <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+</head>
+    <body>
+        <header>
+        <div class="linea"></div>
+        <div id="header">
+            <div id="centro">
+                <div id="logo">
+                    <div id="l_unad">
+                        <img id="il_unad" src="../../img/logo_unad.PNG" alt="l_unad">                        
+                    </div> 
+                    <div id="txt_unad">
+                        <h2>DISEÑO DE SITIOS WEB UNAD</h2>
+                        <h5>Administración de Base de Datos</h5>
+                    </div>                   
+                </div>
+                <div id="head">
+                    <ul class="nav">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../introduccion.html">Introducción</a></li>
+                        <li class="current"><a href="#">Lecturas&#9660;</a>
+                            <ul>
+                                <li><a href="bdr.html">Base de datos relacional</a></li>
+                                <li><a href="rbdr.html">Relación entre entidades</a></li>
+                                <li class="current"><a href="#">Modelo Entidad-Relación</a></li>
+                                <li><a href="indices-vistas-tablas.html">Indices, vistas y tablas</a></li>
+                                <li><a href="#">Uso de LDD, LMD y LCD</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multimedia&#9660;</a>
+                            <ul>
+                                <li><a href="../multimedia/introbd.html">Introducción a base de datos</a></li>
+                                <li><a href="../multimedia/modelo-er.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="../multimedia/indices-vistas-disparadores.html">Indices, vistas y disparadores</a></li>
+                                <li><a href="../multimedia/practica-bdr.html">Práctica Base de Datos Relacional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Actividades&#9660;</a>
+                            <ul>
+                                <li><a href="../activities/activities1.html">Actividades 1-2</a></li>
+                                <li><a href="../activities/activities2.html">Actividades 3-4</a></li>
+                                <li><a href="../activities/activities3.html">Actividades 5-6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../authors.html">Autores</a></li>
+                        <li><div id="sfc1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn"></div></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linea"></div> 
+        </header>
+        <div class="presentacion">           
+            <h2 style="background: rgba(255,255,255,0.7);">
+                1. Modelo ER
+                <hr><br>
+                Se trata de una técnica cuyo objetivo es la representación y definición de todos los datos que se introducen, almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta las necesidades de la tecnología existente, ni otras restricciones.<br>
+                El modelo entidad/relación extendido describe con un alto nivel de abstracción la distribución de datos almacenados en un sistema. Existen dos elementos principales: las entidades y las relaciones. Las extensiones al modelo básico añaden además los atributos de las entidades y la jerarquía entre éstas. Estas extensiones tienen como finalidad aportar al modelo una mayor capacidad expresiva.
+                <br>
+                <br>
+                <i>Entidad:</i> Es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos.<br><br>
+                <i>Relación:</i> Es una asociación o correspondencia existente entre una o varias entidades.<br><br>
+                2. Notación del modelo ER
+                <hr><br>
+                <ul>
+                    <li><u>Entidad:</u>
+                    La representación gráfica de un tipo de entidad regular es un rectángulo etiquetado con el nombre del tipo de entidad. Un tipo de entidad débil se representa con dos rectángulos concéntricos con su nombre en el interior.<br><br>
+                    <img style="width: 50%;" src="../../img/entity.jpg" alt="entity">
+                    </li>
+                    <li><u>Relación:</u>
+                    Se representa por un rombo unido a las entidades relacionadas por dos líneas rectas a los lados. El tipo de correspondencia se representa gráficamente con una etiqueta 1:1, 1:N o M:N.<br><br>
+                    <img style="width: 50%;" src="../../img/relation.jpg" alt="relation"><br><br>
+                    </li>
+                    <li><u>Atributo:</u>
+                    Un atributo se representa mediante una elipse, con su nombre dentro, conectada por una línea al tipo de entidad o relación.<br>
+                    En lugar de una elipse puede utilizarse un círculo con el nombre dentro, o un círculo más pequeño con el nombre del atributo a un lado. También pueden representarse en una lista asociada a la entidad. El identificador aparece con el nombre marcado o subrayado, o bien con su círculo en negro.<br><br>
+                    <img style="width: 50%;" src="../../img/attrib.jpg" alt="attrib"><br><br>
+                    </li>
+                    <li><u>Exclusividad:</u>
+                    En la representación de las relaciones exclusivas se incluye un arco sobre las líneas que conectan el tipo de entidad a los dos o más tipos de relación.<br><br>
+                    <img style="width: 50%;" src="../../img/exclusivity.jpg" alt="attrib"><br><br>
+                    </li>
+                    <li><u>Jerarquía:</u>
+                    La representación de las jerarquías se realiza mediante un triángulo invertido, con la base paralela al rectángulo que representa el supertipo y conectando a éste y a los subtipos.<br><br>
+                    <img style="width: 50%;" src="../../img/jerarquity.jpg" alt="attrib"><br><br>
+                    </li>
+                </ul>
+             </h2> 
+        </div>
+    </body>
+</html>

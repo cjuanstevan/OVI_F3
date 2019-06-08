@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Relación entre entidades - OVI Administración de bases de datos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OVI diseños de sitios web, UNAD Universidad Nacional Abierta y a Distancia" />
+    <meta name="copyright" content="Yonatan Daniel Rodríguez & Juan Stevan Correa" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="all">
+	<script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="../../js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://counter7.wheredoyoucomefrom.ovh/private/counter.js?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn&down=async" async></script>
+    <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+</head>
+    <body>
+        <header>
+        <div class="linea"></div>
+        <div id="header">
+            <div id="centro">
+                <div id="logo">
+                    <div id="l_unad">
+                        <img id="il_unad" src="../../img/logo_unad.PNG" alt="l_unad">                        
+                    </div> 
+                    <div id="txt_unad">
+                        <h2>DISEÑO DE SITIOS WEB UNAD</h2>
+                        <h5>Administración de Base de Datos</h5>
+                    </div>                   
+                </div>
+                <div id="head">
+                    <ul class="nav">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../introduccion.html">Introducción</a></li>
+                        <li class="current"><a href="#">Lecturas&#9660;</a>
+                            <ul>
+                                <li><a href="bdr.html">Base de datos relacional</a></li>
+                                <li><a href="rbdr.html">Relación entre entidades</a></li>
+                                <li><a href="mbdr.html">Modelo Entidad-Relación</a></li>
+                                <li class="current"><a href="#">Indices, vistas y tablas</a></li>
+                                <li><a href="ldd-lmd-lcd.html">Uso de LDD, LMD y LCD</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multimedia&#9660;</a>
+                            <ul>
+                                <li><a href="../multimedia/introbd.html">Introducción a base de datos</a></li>
+                                <li><a href="../multimedia/modelo-er.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="../multimedia/indices-vistas-disparadores.html">Indices, vistas y disparadores</a></li>
+                                <li><a href="../multimedia/practica-bdr.html">Práctica Base de Datos Relacional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Actividades&#9660;</a>
+                            <ul>
+                                <li><a href="../activities/activities1.html">Actividades 1-2</a></li>
+                                <li><a href="../activities/activities2.html">Actividades 3-4</a></li>
+                                <li><a href="../activities/activities3.html">Actividades 5-6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../authors.html">Autores</a></li>
+                        <li><div id="sfc1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn"></div></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linea"></div> 
+        </header>
+        <div class="presentacion">           
+            <h2 style="background: rgba(255,255,255,0.7);">
+                1. Indices en SQL Server
+                <hr><br>
+                Un índice es una estructura en disco o en memoria asociada con una tabla o vista que acelera la recuperación de filas de la tabla o vista. Un índice contiene claves generadas a partir de una o varias columnas de la tabla o la vista. <br><br>
+                Para crear un índice no clúster en una tabla:<br><br>
+                <ol>
+                    <li>1. En el "Explorador de objetos", conéctese a una instancia del Motor de base de datos.</li>
+                    <li>2. En la barra de Estándar, haga clic en "Nueva consulta".</li>
+                    <li>3. Utilice el siguiente ejemplo en la ventana de consulta y haga clic en "Ejecutar"
+                    <br><br>
+                    <img src="../../img/indice.JPG" alt="indice_sql_server"><br>
+                    Microsoft. (2017). índice no clúster en una tabla. 25-04-2019, de Microsoft Sitio web: https://docs.microsoft.com/es-es/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017
+                    </li>
+                </ol>
+                <br>
+                2. Crear una ina vista de SQL Server
+                <hr><br>
+                En el siguiente ejemplo se crea una vista que contiene todos los empleados y sus fechas de contratación denominada Estudiantes_UNAD. <br><br>
+                <img src="../../img/view.JPG" alt="vista_sql_server"><br>
+                Microsoft. (2017). VIstas. 25-04-2019, de Microsoft Sitio web: https://docs.microsoft.com/es-es/sql/t-sql/statements/alter-view-transact-sql?view=sql-server-2017<br><br>
+                3. Modificación de tablas
+                <hr><br>
+                Puede crear y modificar tablas, restricciones, índices y relaciones en Access escribiendo consultas de definición de datos en la vista SQL<br>
+                Para modificar una tabla, use un comando ALTER TABLE. Puede usar un comando ALTER TABLE para agregar, modificar o quitar las restricciones o columnas (eliminar). Un comando ALTER TABLE tiene la siguiente sintaxis:<br><br>
+                <img src="../../img/modified_table.JPG" alt="modificador_sql_server"><br>
+                Microsoft. (2017). Access SQL: conceptos básicos, vocabulario y sintaxis. 25-04-2019, de Microsoft Sitio web: https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671<br><br>
+                4. Borrado de Base de Datos y Tablas
+                <hr><br>
+                Para quitar una instantánea de base de datos:<br><br>
+                <ol>
+                    <li>1.	Identifique la instantánea de base de datos que desee quitar. Puede ver las instantáneas de una base de datos en SQL Server Management Studio. Para obtener más información, vea <a href="https://docs.microsoft.com/es-es/sql/relational-databases/databases/view-a-database-snapshot-sql-server?view=sql-server-2017" target="_blank">Ver una instantánea de base de datos (SQL Server).</a></li><br>
+                    <li>2.	Ejecute una instrucción <a href="https://docs.microsoft.com/es-es/sql/t-sql/statements/drop-database-transact-sql?view=sql-server-2017" target="_blank">DROP DATABASE</a> especificando el nombre de la instantánea de base de datos que se quitará. La sintaxis es la siguiente:<br><br>
+                    DROP DATABASE nombre_de_instantánea_de_base_de_datos [ ,...n ]<br>
+                    Donde nombre_de_instantánea_de_base_de_datos es el nombre de la instantánea de base de datos que se va a quitar.<br>
+                    <img src="../../img/snapshot.jpg" alt="snapshot"><br>
+                    </li>
+                </ol><br>
+                Para eliminar una tabla de la base de datos:<br><br>
+                <ol>
+                    <li>1.	En el Explorador de objetos, seleccione la tabla que desea eliminar.</li><br>
+                    <li>2.	Haga clic con el botón derecho en la tabla y elija Eliminar en el menú contextual.</li><br>
+                    <li>3.	Un cuadro de mensaje le pedirá que confirme la eliminación. Haga clic en Sí.</li>
+                </ol><br>
+                Microsoft. (2017). Access SQL: conceptos básicos, vocabulario y sintaxis. 25-04-2019, de Microsoft Sitio web: https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671
+             </h2> 
+        </div>
+    </body>
+</html>

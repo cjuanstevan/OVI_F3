@@ -1,0 +1,137 @@
+@import url(http://allfont.es/allfont.css?fonts=franklin-gothic-heavy);
+@import url(http://allfont.es/allfont.css?fonts=franklin-gothic-book);
+
+
+body{
+	margin: 0;
+	padding: 0;	
+    background: url('../img/ECBTI-3.png');
+    background-repeat: no-repeat no-repeat;
+
+}
+
+/*--Linea Azul*/
+.linea{
+	height: 20px;
+	background: #005883;
+}
+
+#header{	
+	background: #0b2f3a;
+    font-family: 'Franklin Gothic Heavy', arial;
+    width: 100%;
+    /*position: fixed*/
+    /*background: url('../img/ECBTI-1.png');*/
+}
+
+#header #centro
+{
+    width: 100%;
+	height: auto;
+    overflow: hidden;
+	border: 0px solid;
+	/*margin: auto;*/
+} 
+#header #centro #logo{
+	width: 30%; 
+    border:0px solid;
+	float: left;
+}
+
+#header #centro #logo h2, h5{
+	color: #fff;	
+    padding-left: 0px;
+} 
+
+#header #centro #logo p{
+	margin-top: 20px;
+}
+
+
+
+/*-----------Vamos hacer el estilo del Menu----*/
+
+#header #menu{
+
+	/*width: 100%;
+	height: auto;
+	overflow: hidden;
+	border:0px solid; 
+	float: right;
+	margin-top: 30px;
+    margin-right: 30px;
+	text-align: right;*/
+}
+
+#header #menu ul li{
+	display: inline-block;
+    font-size: 12px;
+
+}
+
+#header #menu ul li a{
+	
+	color: #04b4ae;
+	text-decoration: none;
+	padding: 7px 10px;
+	margin: 0px 4px;
+
+}
+
+#header #menu ul li a:hover{
+	background: #0b2f3a;
+
+}
+
+.presentacion{
+    padding: 50px 240px 50px 240px;
+    font-family: 'Franklin Gothic Book', arial;
+    font-size: 12px;
+}
+.current{
+    background: #005883;
+    border: 1px solid #fff;
+}
+.sombra{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+#header #centro #logo #l_unad img{
+                width: 20%;
+            }
+
+/*MENU DESPLEGABLE*/
+*{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    margin: auto;
+    padding-top: 45px;
+    width: 70%;  
+
+}
+ul, ol{
+    list-style: none;
+}
+.nav{
+
+}
+.nav li a{
+    background-color: #0b2f3a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Base de Datos Relacional - OVI Administración de bases de datos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OVI diseños de sitios web, UNAD Universidad Nacional Abierta y a Distancia" />
+    <meta name="copyright" content="Yonatan Daniel Rodríguez & Juan Stevan Correa" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="all">
+	<script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="../../js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://counter7.wheredoyoucomefrom.ovh/private/counter.js?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn&down=async" async></script>
+    <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+</head>
+    <body>
+        <header>
+        <div class="linea"></div>
+        <div id="header">
+            <div id="centro">
+                <div id="logo">
+                    <div id="l_unad">
+                        <img id="il_unad" src="../../img/logo_unad.PNG" alt="l_unad">                        
+                    </div> 
+                    <div id="txt_unad">
+                        <h2>DISEÑO DE SITIOS WEB UNAD</h2>
+                        <h5>Administración de Base de Datos</h5>
+                    </div>                   
+                </div>
+                <div id="head">
+                    <ul class="nav">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../introduccion.html">Introducción</a></li>
+                        <li class="current"><a href="#">Lecturas&#9660;</a>
+                            <ul>
+                                <li class="current"><a href="#">Base de datos relacional</a></li>
+                                <li><a href="rbdr.html">Relación entre entidades</a></li>
+                                <li><a href="mbdr.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="indices-vistas-tablas.html">Indices, vistas y tablas</a></li>
+                                <li><a href="ldd-lmd-lcd.html">Uso de LDD, LMD y LCD</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multimedia&#9660;</a>
+                            <ul>
+                                <li><a href="../multimedia/introbd.html">Introducción a base de datos</a></li>
+                                <li><a href="../multimedia/modelo-er.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="../multimedia/indices-vistas-disparadores.html">Indices, vistas y disparadores</a></li>
+                                <li><a href="../multimedia/practica-bdr.html">Práctica Base de Datos Relacional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Actividades&#9660;</a>
+                            <ul>
+                                <li><a href="../activities/activities1.html">Actividades 1-2</a></li>
+                                <li><a href="../activities/activities2.html">Actividades 3-4</a></li>
+                                <li><a href="../activities/activities3.html">Actividades 5-6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../authors.html">Autores</a></li>
+                        <li><div id="sfc1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn"></div></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linea"></div> 
+        </header>
+        <div class="presentacion">           
+            <h2 style="background: rgba(255,255,255,0.7);">2. Base de Datos Relacional
+                <hr>
+                <p>A continuación veamos la representación gráfica de una base de datos relacional</p>
+                <img style="width: 100%" src="../../img/esquemabdr.jpg" alt="esque_bdr">
+                <p>Una base de datos relacional es una colección de elementos de datos organizados en un conjunto de tablas formalmente descritas desde la que se puede acceder a los datos o volver a montarlos de muchas maneras diferentes sin tener que reorganizar las tablas de la base. La base de datos relacional fue inventada por E.F. Codd en IBM en 1970</p>
+                <p>La interfaz estándar de programa de usuario y aplicación a una base de datos relacional es el lenguaje de consultas estructuradas (SQL). Los comandos de SQL se utilizan tanto para consultas interactivas para obtener información de una base de datos relacional y para la recopilación de datos para los informes. <br>
+                </p>
+                Margaret Rouse. (2015). Base de datos relacional. 19-04-2019, de Searchdatacenter Sitio web: https://searchdatacenter.techtarget.com/es/definicion/Base-de-datos-relacionald<br><br> 
+                
+                3. Pasos para crear una base de datos bien estructurada
+                <hr>
+                Diseñar una base de datos útil y eficiente requiere seguir el proceso adecuado, incluidas las siguientes etapas:
+                <ul>
+                    <li>Análisis de los requisitos o identificación del propósito de tu base de datos.</li>
+                    <li>Organización de los datos en tablas.</li>
+                    <li>Especificación de las claves primarias y análisis de las relaciones.</li>
+                    <li>Normalización para estandarizar las tablas.</li>
+                </ul>
+                <br>
+                4. Estructura de la base de datos: los bloques de creación de una base de datos
+                <hr>
+                El siguiente paso es organizar la representación visual de tu base de datos. Para ello, debes comprender exactamente cómo se estructuran las bases de datos relacionales.<br><br>
+                Dentro de una base de datos, los datos relacionados se agrupan en tablas, cada una de ellas consiste en filas (también llamadas "tuplas") y columnas, como una hoja de cálculo.<br><br>
+                Para convertir tus listas de datos en tablas, comienza creando una tabla para cada tipo de entidad, como productos, ventas, clientes y pedidos. Te mostramos un ejemplo a continuación:<br><br>
+
+                Cada fila de una tabla se llama "registro". Los registros incluyen datos sobre algo o alguien, como un cliente específico. En cambio, las columnas (también conocidas como "campos" o "atributos") contienen un único tipo de información que aparece en cada registro, como las direcciones de todos los clientes enumerados en la tabla. Las tablas que crear son:<br><br>
+                
+                <table style="width: 100%" border="1">
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>Edad</td>
+                        <td>Código</td>
+                    </tr>
+                    <tr>
+                        <td>Juan Stevan</td>
+                        <td>De Jesús</td>
+                        <td>20</td>
+                        <td>34760</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Alberto</td>
+                        <td>Sosa</td>
+                        <td>21</td>
+                        <td>34761</td>
+                    </tr>
+                    <tr>
+                        <td>Mario Fernando</td>
+                        <td>Bedoya</td>
+                        <td>23</td>
+                        <td>34762</td>
+                    </tr>
+                    <tr>
+                        <td>Héctor Fabián</td>
+                        <td>Vélez</td>
+                        <td>23</td>
+                        <td>34763</td>
+                    </tr>
+                    <tr>
+                        <td>Víctor Hugo</td>
+                        <td>Alfonso</td>
+                        <td>25</td>
+                        <td>34764</td>
+                    </tr>
+                </table>    
+                <br>
+                Para que los datos consistentes de un registro al siguiente, asigna el tipo de datos apropiado a cada columna. Los tipos de datos comunes incluyen:<br><br>
+
+                CHAR - una longitud específica de texto.<br>
+                VARCHAR - texto de longitudes variables.<br>
+                TEXT - grandes cantidades de texto.<br>
+                INT - número entero positivo o negativo.<br>
+                FLOAT, DOUBLE - también puede almacenar números de punto flotante.<br>
+                BLOB - datos binarios.<br>                
+             </h2> 
+        </div>
+    </body>
+</html>

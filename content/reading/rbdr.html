@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Relación entre entidades - OVI Administración de bases de datos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OVI diseños de sitios web, UNAD Universidad Nacional Abierta y a Distancia" />
+    <meta name="copyright" content="Yonatan Daniel Rodríguez & Juan Stevan Correa" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="all">
+	<script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="../../js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://counter7.wheredoyoucomefrom.ovh/private/counter.js?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn&down=async" async></script>
+    <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+</head>
+    <body>
+        <header>
+        <div class="linea"></div>
+        <div id="header">
+            <div id="centro">
+                <div id="logo">
+                    <div id="l_unad">
+                        <img id="il_unad" src="../../img/logo_unad.PNG" alt="l_unad">                        
+                    </div> 
+                    <div id="txt_unad">
+                        <h2>DISEÑO DE SITIOS WEB UNAD</h2>
+                        <h5>Administración de Base de Datos</h5>
+                    </div>                   
+                </div>
+                <div id="head">
+                    <ul class="nav">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../introduccion.html">Introducción</a></li>
+                        <li class="current"><a href="#">Lecturas&#9660;</a>
+                            <ul>
+                                <li><a href="bdr.html">Base de datos relacional</a></li>
+                                <li class="current"><a href="#">Relación entre entidades</a></li>
+                                <li><a href="mbdr.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="indices-vistas-tablas.html">Indices, vistas y tablas</a></li>
+                                <li><a href="ldd-lmd-lcd.html">Uso de LDD, LMD y LCD</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multimedia&#9660;</a>
+                            <ul>
+                                <li><a href="../multimedia/introbd.html">Introducción a base de datos</a></li>
+                                <li><a href="../multimedia/modelo-er.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="../multimedia/indices-vistas-disparadores.html">Indices, vistas y disparadores</a></li>
+                                <li><a href="../multimedia/practica-bdr.html">Práctica Base de Datos Relacional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Actividades&#9660;</a>
+                            <ul>
+                                <li><a href="../activities/activities1.html">Actividades 1-2</a></li>
+                                <li><a href="../activities/activities2.html">Actividades 3-4</a></li>
+                                <li><a href="../activities/activities3.html">Actividades 5-6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../authors.html">Autores</a></li>
+                        <li><div id="sfc1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn"></div></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linea"></div> 
+        </header>
+        <div class="presentacion">           
+            <h2 style="background: rgba(255,255,255,0.7);">
+                5. Creación de relaciones entre entidades 
+                <hr>
+                Cuando tus tablas de base de datos se conviertan en tablas, estarás listo para analizar las relaciones entre esas tablas. La cardinalidad se refiere a la cantidad de elementos que interactúan entre dos tablas relacionadas. Identificar la cardinalidad te ayuda a asegurarte de que has dividido los datos en tablas de la forma más eficiente.<br><br>
+
+                Cada entidad puede, potencialmente, tener una relación con todas las demás, pero por lo general esas relaciones pueden ser de uno de tres tipos:<br>
+                <br>
+                <u>Relación uno a uno:</u><br><br>
+                Si hay una única instancia de la Entidad A para cada instancia de la Entidad B, se dice que tienen una relación de uno a uno (a menudo se escribe 1:1). Puedes indicar este tipo de relación en un diagrama ER mediante una línea con un guion en cada extremo:
+                <br><br>
+                <img style="width: 50%" src="../../img/1a1.jpg" alt="1a1">
+                <br><br>
+                <u>Relación uno a muchos</u><br><br>
+                Estas relaciones suceden cuando un registro de una tabla está asociado a múltiples entradas en otra tabla. Por ejemplo, un solo cliente puede haber solicitado múltiples pedidos o una persona haberse llevado muchos libros de la biblioteca a la vez. Las relaciones uno a muchos (1:M) se indican con lo que se denomina "notación patas de gallo" como en el siguiente ejemplo:
+                <br><br>
+                <img style="width: 50%" src="../../img/1am.jpg" alt="1a1"> 
+                <br>
+                <u>Relación muchos a muchos:</u><br><br>
+                Cuando múltiples entidades de una tabla se pueden asociar a múltiples entidades de otra tabla, se dice que tienen una relación de muchos a muchos (M:N). Esto puede suceder en el caso de estudiantes y clases, ya que un estudiante puede inscribirse en muchas clases, y una clase puede tener numerosos estudiantes.<br>
+                En un diagrama ER, estas relaciones se representan con estas líneas:
+                <br><br>
+                <img style="width: 50%" src="../../img/mam.jpg" alt="1a1"> 
+                <br>
+                No es posible implementar directamente este tipo de relación en una base de datos. En cambio, debes dividirlo en dos relaciones uno a muchos.
+                Para ello, debes crear una nueva entidad entre esas dos tablas. Si la relación M:N existe entre ventas y productos, quizás llames a esa nueva entidad "productos vendidos", ya que mostraría los contenidos de cada venta. Tanto las tablas de ventas como de productos tendrían una relación 1:M con "productos vendidos". Esta clase de entidad intermedia se llama "tabla de enlaces", "entidad asociativa" o "tabla de unión" en diversos modelos.
+                Cada registro de la tabla de enlaces se correspondería con dos de las entidades de las tablas contiguas (también puede incluir información adicional). Por ejemplo, una tabla de enlaces entre estudiantes y clases podría verse así:
+                <br><br>
+                <img style="width: 50%" src="../../img/mam2.jpg" alt="1a1"> 
+                <br><br>
+                Referencia:<br>
+                lucidchart. (2019 Lucid Software Inc.). Tutorial de estructura y diseño de bases de datos. 19-04-2019, de lucidchart Sitio web: https://www.lucidchart.com/pages/es/tutorial-de-estructura-y-diseno-de-bases-de-datos
+             </h2> 
+        </div>
+    </body>
+</html>

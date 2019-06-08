@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Relación entre entidades - OVI Administración de bases de datos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OVI diseños de sitios web, UNAD Universidad Nacional Abierta y a Distancia" />
+    <meta name="copyright" content="Yonatan Daniel Rodríguez & Juan Stevan Correa" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="all">
+	<script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="../../js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://counter7.wheredoyoucomefrom.ovh/private/counter.js?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn&down=async" async></script>
+    <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+</head>
+    <body>
+        <header>
+        <div class="linea"></div>
+        <div id="header">
+            <div id="centro">
+                <div id="logo">
+                    <div id="l_unad">
+                        <img id="il_unad" src="../../img/logo_unad.PNG" alt="l_unad">                        
+                    </div> 
+                    <div id="txt_unad">
+                        <h2>DISEÑO DE SITIOS WEB UNAD</h2>
+                        <h5>Administración de Base de Datos</h5>
+                    </div>                   
+                </div>
+                <div id="head">
+                    <ul class="nav">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../introduccion.html">Introducción</a></li>
+                        <li class="current"><a href="#">Lecturas&#9660;</a>
+                            <ul>
+                                <li><a href="bdr.html">Base de datos relacional</a></li>
+                                <li><a href="rbdr.html">Relación entre entidades</a></li>
+                                <li><a href="mbdr.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="indices-vistas-tablas.html">Indices, vistas y tablas</a></li>
+                                <li class="current"><a href="#">Uso de LDD, LLMD y LCD</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multimedia&#9660;</a>
+                            <ul>
+                                <li><a href="../multimedia/introbd.html">Introducción a base de datos</a></li>
+                                <li><a href="../multimedia/modelo-er.html">Modelo Entidad-Relación</a></li>
+                                <li><a href="../multimedia/indices-vistas-disparadores.html">Indices, vistas y disparadores</a></li>
+                                <li><a href="../multimedia/practica-bdr.html">Práctica Base de Datos Relacional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Actividades&#9660;</a>
+                            <ul>
+                                <li><a href="../activities/activities1.html">Actividades 1-2</a></li>
+                                <li><a href="../activities/activities2.html">Actividades 3-4</a></li>
+                                <li><a href="../activities/activities3.html">Actividades 5-6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../authors.html">Autores</a></li>
+                        <li><div id="sfc1dp5ad3l1bsrz82yuymbh8hhxnz4mhkn"></div></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linea"></div> 
+        </header>
+        <div class="presentacion">           
+            <h2 style="background: rgba(255,255,255,0.7);">
+                1. Uso de LDD, LMD y LCD
+                <hr><br>
+                <u>LENGUAJE DE DEFINICION DE DATOS(LDD):</u>
+                <br><br>
+                El lenguaje de definición de datos (en inglés Data Definition Language, o DDL), es el que se encarga de la modificación de la estructura de los objetos de la base de datos.<br><br>
+                El SGBD posee un compilador de LDD cuya función consiste en procesar las sentencias del lenguaje para identificar las descripciones de los distintos elementos de los esquemas y almacenar la descripción del esquema en el catálogo o diccionario de datos.Existen cuatro operaciones básicas:<br><br>
+                CREATE<br>
+                ALTER<br>
+                DROP<br>
+                TRUNCATE<br><br>
+                <u>LENGUAJE DE MANIPULACION DE DATOS(LMD):</u>
+                <br><br>
+                Una vez creados los esquemas de la base de datos, los usuarios necesitan un lenguaje que les permita manipular los datos de la base de datos: realizar consultas, inserciones, eliminaciones y modificaciones. Este lenguaje es el que se denomina (LMD).<br>
+                LMD: Un lenguaje de manipulación de datos (Data Manipulation Language, o DML en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo de datos adecuado.
+                <br><br>
+                INSERT<br>
+                UPDATE<br>
+                DELETE<br><br>
+                <u>LENGUAJE DE CONTROL DE DATOS(LCD):</u>
+                <br><br>
+                Consiste en garantizar que sólo los usuarios autorizados puedan efectuar operaciones correctas sobre la Base de Datos para ello se dispone de 2 tipos.<br><br>
+                -	Control sobre la base de datos<br><br>
+                -	Control sobre las tablas<br><br>
+                Data Control Language, en español: Lenguaje de Control de Datos.<br>
+                Este tipo de comandos se encargan de la seguridad de nuestros datos y el control de usuarios.<br><br>
+                <img style="width: 50%;" src="../../img/lcd.JPG" alt="lcd"><br><br>
+                2. Realizar de manera práctica procedimientos almacenados
+                <hr><br>
+                Un procedimiento almacenado de SQL Server es un grupo de una o varias instrucciones Transact-SQL o una referencia a un método de Common Runtime Language (CLR) de Microsoft .NET Framework. Los procedimientos se asemejan a las construcciones de otros lenguajes de programación, porque pueden:<br><br>
+                •	Aceptar parámetros de entrada y devolver varios valores en forma de parámetros de salida al programa que realiza la llamada.<br>
+                •	Contener instrucciones de programación que realicen operaciones en la base de datos. Entre otras, pueden contener llamadas a otros procedimientos.<br>
+                •	Devolver un valor de estado a un programa que realiza una llamada para indicar si la operación se ha realizado correctamente o se han producido errores, y el motivo de estos<br><br>
+                <img src="../../img/sql.jpg" alt="sql"><br><br>
+                Microsoft. (2017). Access SQL: conceptos básicos, vocabulario y sintaxis. 25-04-2019, de Microsoft Sitio web: <a href="https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671" target="_blank">https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671</a>
+             </h2> 
+        </div>
+    </body>
+</html>
